@@ -2,7 +2,7 @@ from django import http
 
 
 def hello(request):
-    content = '<html><body>Hello, {} from {}!</body></html>'.format(
+    content = '<html><body>Buna, {} from {}!</body></html>'.format(
         request.user,
         request.META['REMOTE_ADDR']
     )
