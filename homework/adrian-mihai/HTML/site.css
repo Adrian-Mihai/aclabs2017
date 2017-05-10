@@ -1,0 +1,40 @@
+.header{
+    position: relative;
+}
+.header img {
+    width: 100%;
+}
+.header h1{
+    position: absolute;
+    top:80px;
+    margin-left: 9px;
+    color: white;
+    font-size: 60px;
+}
+.header h2{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 40px 20px 40px;
+}
+.product{
+    box-sizing: border-box;
+    border: 1px solid #c0c0c0;
+    width: 49%;
+    display: inline-block;
+    background-color: yellow;
+    padding: 20px;
+}
+.product .price{
+    width: 60px;
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.footer{
+    text-align: center;
+    font-weight: bold;
+}
