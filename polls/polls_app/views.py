@@ -1,10 +1,8 @@
 import json
 import os
-import faker
 
 from django import http
 from django.shortcuts import render, redirect
-
 
 def read_datafile():
     filepath = os.path.join(os.path.dirname(__file__), "polls.json")
@@ -23,10 +21,8 @@ def hello(request):
 
 
 def index(request):
-    return render(request, "polls_app/index.html", {
-        "polls": DATA,
-        "faker": faker.Faker()
-    })
+    return render(request, "polls_app/index.html",
+        context = {"polls" : DATA})
 
 
 def detail(request, pollname):
