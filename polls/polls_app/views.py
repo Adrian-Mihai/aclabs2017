@@ -11,7 +11,6 @@ def read_datafile():
 
 DATA = read_datafile()
 
-
 def hello(request):
     content = '<html><body>Buna, {} from {}!</body></html>'.format(
         request.user,
