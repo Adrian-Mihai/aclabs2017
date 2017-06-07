@@ -21,15 +21,12 @@ def hello(request):
 
 
 def index(request):
-<<<<<<< HEAD
     return render(request, "polls_app/index.html",
         context = {"polls" : DATA})
-=======
     polls_qs = Poll.objects.values('name', 'slug')
     return render(request, "polls_app/index.html", {
         "polls": polls_qs,
     })
->>>>>>> upstream/master
 
 
 def detail(request, slug):

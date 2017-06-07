@@ -1,7 +1,6 @@
 from django.contrib import admin
 from .models import Question, Poll, Choice
 
-<<<<<<< HEAD
 from .models import Question, Poll, Choice
 
 class PollAdmin(admin.ModelAdmin):
@@ -13,7 +12,6 @@ class Meta:
 admin.site.register(Question)
 admin.site.register(Choice)
 admin.site.register(Poll)
-=======
 
 class ChoiceAdmin(admin.ModelAdmin):
     search_fields = ('choice_text', )
@@ -49,4 +47,3 @@ class PollAdmin(admin.ModelAdmin):
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice, ChoiceAdmin)
 admin.site.register(Poll, PollAdmin)
->>>>>>> upstream/master

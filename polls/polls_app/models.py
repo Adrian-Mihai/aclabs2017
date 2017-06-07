@@ -1,7 +1,6 @@
 from django.db import models
 from django.utils.text import slugify
 import random
-<<<<<<< HEAD
 
 class Question(models.Model):
 
@@ -29,8 +28,6 @@ class Poll(models.Model):
     def __unicode__(self):
         return '{}'.format(self.name)
 
-=======
-
 class Question(models.Model):
     question_text = models.CharField(max_length=200)
 
@@ -57,4 +54,3 @@ class Poll(models.Model):
 
     def __str__(self):
         return '{}'.format(self.name)
->>>>>>> upstream/master
